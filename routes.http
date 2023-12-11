@@ -1,4 +1,4 @@
-POST http://localhost:3333/motos
+POST http://localhost:3333/moto
 Content-Type: application/json
 
 {
@@ -9,15 +9,15 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3333/motos?search=Yamaha
+GET http://localhost:3333/moto?search=Yamaha
 
 ###
 
-GET http://localhost:3333/motos
+GET http://localhost:3333/moto
 
 ###
 
-PUT http://localhost:3333/motos/
+PUT http://localhost:3333/moto/
 Content-Type: application/json
 
 {
@@ -28,4 +28,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3333/motos/
+DELETE http://localhost:3333/moto/
