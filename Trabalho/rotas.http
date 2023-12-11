@@ -1,0 +1,31 @@
+POST http://localhost:3333/livro
+Content-Type: application/json
+
+{
+    "titulo": "Livro: 02",
+    "autor": "Autor: 02",
+    "npaginas": 450
+}
+
+###
+
+GET http://localhost:3333/livro
+
+###
+
+GET http://localhost:3333/livro?search=IFMS
+
+###
+
+PUT http://localhost:3333/livro/aceb8817-5755-4d12-aebd-532847f7db54
+Content-Type: application/json
+
+{
+    "titulo": "Livro: IFMS",
+    "autor": "Autor: Felipe",
+    "npaginas": 100
+}
+
+###
+
+DELETE http://localhost:3333/livro/5fe1dcfc-19d8-445b-a511-395f2df446f9
