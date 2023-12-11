@@ -30,7 +30,7 @@ list(search){
         this.#motos.set(id, moto)
     }
 
-    delete(id){
-        this.#motos.delete(id)
+    delete(id, moto){
+        this.#motos.delete(id, moto)
     }
 }
