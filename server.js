@@ -1,14 +1,11 @@
 import {fastify} from 'fastify'
 import { DatabaseMemory } from './database-memory.js'
-import { request } from 'http'
 
 const server = fastify()
 
 const database = new DatabaseMemory()
 
 server.post('/moto', (request, reply) => {
-    //const body = request.body//
-   //console.log(body)//
    const {marca, cor, placa } = request.body
     database.create({
         marca: marca,
