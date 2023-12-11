@@ -26,7 +26,7 @@ server.get('/moto', (request) => {
     return motos
 })
 
-server.put('/motos/:id', (request, reply) => {
+server.put('/moto/:id', (request, reply) => {
 
     const motoId = request.params.id
     const {marca, cor , placa} = request.body
